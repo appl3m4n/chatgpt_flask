@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request
-import webbrowser
-import time
-import openai
+#import webbrowser
+#import time
+#import openai
 
 
-str1 = 'sk-6DurzFcba69Gqq8KkZeAT3B'
-str2 = 'lbkFJYWeBEwHHM'
-str3 = 'JVnBzt79unM'
+#str1 = 'sk-6DurzFcba69Gqq8KkZeAT3B'
+#str2 = 'lbkFJYWeBEwHHM'
+#str3 = 'JVnBzt79unM'
 
 app = Flask (__name__)
 @app.route ('/')
