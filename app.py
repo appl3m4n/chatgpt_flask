@@ -20,14 +20,14 @@ def getvalue():
     chatgpt = request.form ['chatgpt']
     db = request.form ['dateofbirth']
 
-    openai.api_key = str1 + str2 + str3
-    x = chatgpt
+    #openai.api_key = str1 + str2 + str3
+    #x = chatgpt
     #"Give me 7 ideas for a date in Paris"
-    completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": x}])
-    y = [completion.choices[0].message.content]
+    #completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": x}])
+    #y = [completion.choices[0].message.content]
     print(name)
-    print(y)
-    return render_template ('index2.html', n=name, age=age,db=db, xx=y)
+    #print(y)
+    return render_template ('index2.html', n=name, age=age,db=db, xx=chatgpt)
 
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0')
