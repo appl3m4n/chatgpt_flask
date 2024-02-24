@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 #import webbrowser
 #import time
-#import openai
+import openai
 
 
 str1 = 'sk-6DurzFcba69Gqq8KkZeAT3B'
