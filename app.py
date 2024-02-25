@@ -15,10 +15,10 @@ def index ():
 
 @app.route('/', methods=['POST'])
 def getvalue():
-    name = request.form['name']
-    age = request.form['age']
+    #name = request.form['name']
+    #age = request.form['age']
     chatgpt = request.form ['chatgpt']
-    db = request.form ['dateofbirth']
+    #db = request.form ['dateofbirth']
 
     openai.api_key = str1 + str2 + str3
     x = chatgpt
@@ -27,7 +27,7 @@ def getvalue():
     y = [completion.choices[0].message.content]
     #print(name)
     #print(y)
-    return render_template ('index2.html', n=name, age=age,db=db, xx=y)
+    return render_template ('index2.html', xx=y)
 
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0')
