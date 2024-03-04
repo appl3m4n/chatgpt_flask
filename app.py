@@ -27,7 +27,7 @@ def getvalue():
     y = [completion.choices[0].message.content]
     #print(name)
     #print(y)
-    return render_template ('index2.html', xx=y)
+    return render_template ('index2.html', chatgpt_question=chatgpt,  chatgpt_output=y)
 
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0')
